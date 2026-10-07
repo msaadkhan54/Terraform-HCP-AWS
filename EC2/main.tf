@@ -28,7 +28,7 @@ resource "aws_key_pair" "key_pair" {
 }
 
 resource "aws_instance" "ec2-pub" {
-    instance_type = "t2.micro"
+    instance_type = "t2.medium"
     security_groups = [ aws_security_group.pub-sg.id ]
     ami = "ami-0d27e0fb3bac4d724"
     subnet_id = var.public_subnets_id[0]
