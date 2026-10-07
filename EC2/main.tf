@@ -24,7 +24,7 @@ resource "aws_security_group" "pub-sg" {
 
 resource "aws_key_pair" "key_pair" {
     key_name = "saad-key"
-    public_key = file("C:/Users/Hp/Downloads/saad-pub.txt")
+    public_key = file("EC2/saad-pub.txt")
 }
 
 resource "aws_instance" "ec2-pub" {
