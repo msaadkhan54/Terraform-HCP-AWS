@@ -38,7 +38,3 @@ resource "aws_instance" "ec2-pub" {
         Name="saad-linux-pub"
     }
 }
-
-# resource "aws_instance" "pub-1a" {
-  
-# }
